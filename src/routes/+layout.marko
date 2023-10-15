@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body class="bg-gradient-to-b from-blue-700 to-blue-400 min-h-screen">
+    <header class="p-6 text-blue-100 flex">
+      <a href="/" class="font-bold font-mono">LOGO</a>
+      <span class="ml-auto">
+        (menu)
+      </span>
+    </header>
+    <main>
+      <${input.renderBody} />
+    </main>
+  </body>
+</html>
+
+style {
+  @import url(style.css);
+
+  main {
+    @apply rounded-t-3xl bg-white shadow-2xl;
+    height: calc(100vh - 78px);
+  }
+}
